@@ -4,18 +4,32 @@
 	border: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-:focus, :active {outline: none;}
-a:focus, a:active{outline: none;}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
 
-nav, footer, header, aside {display: block;}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
 
-html, body {
+html,
+body {
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -26,19 +40,47 @@ html, body {
 	-webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {font-family: inherit;}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
 
-input::-ms-clear{display: none; } 
-button {cursor: pointer;}
-button::-moz-focus-inner {padding: 0; border: 0; } 
-a, a:visited{text-decoration: none;} 
-a:hover {text-decoration: none;} 
-ul-li{list-style: none;} 
-img{vertical-align: top;}
-h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight:  400;}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul-li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
 
-  /* Стили для футера */
-  footer {
+/* Стили для футера */
+footer {
 	/*border-top: 1px dashed white;*/
 	display: flex;
 	align-items: center;
@@ -46,14 +88,16 @@ h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight:  400;}
 	background-color: #212225;
 	color: #fff;
 	min-height: 100px;
-  }
+}
 
-  footer > p {
+footer > p {
 	font-size: 30px;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+		sans-serif;
+}
 
-html, body {
+html,
+body {
 	height: 100%;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -111,8 +155,6 @@ body._lock {
 	margin: 0px 0px 20px 0px;
 }
 
-
-
 .header {
 	position: fixed;
 	left: 0;
@@ -123,20 +165,18 @@ body._lock {
 	-webkit-box-shadow: 0px 17px 11px 0px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 0px 17px 11px 0px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 17px 11px 0px rgba(0, 0, 0, 0.3);
-	font-family: 'Pacifico', cursive;
+	font-family: "Pacifico", cursive;
 }
 
-
-.menu__list > li{
+.menu__list > li {
 	position: relative;
 	margin: 0px 0px 0px 40px;
 	list-style: none;
 }
 
-.menu__link { 
+.menu__link {
 	color: #ffffff;
 	font-size: 18px;
-
 }
 
 .menu__link:hover {
@@ -147,9 +187,9 @@ h1 {
 	font-size: 3rem; /* Исходный размер шрифта */
 	display: flex;
 	justify-content: left;
-	padding: 5% 0 0 1% ;
-	font-family: 'Pacifico', cursive;
-  }
+	padding: 5% 0 0 1%;
+	font-family: "Pacifico", cursive;
+}
 
 @media (min-width: 767px) {
 	.menu__list {
@@ -167,18 +207,17 @@ h1 {
 		justify-content: center;
 		min-height: 70px;
 	}
-	
 }
 
 @media (max-width: 767px) {
-	 .menu__icon {
+	.menu__icon {
 		z-index: 5;
 		display: block;
 		position: relative;
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
-	 }
+	}
 	.menu__icon span,
 	.menu__icon::before,
 	.menu__icon::after {
@@ -205,16 +244,16 @@ h1 {
 		transform: scale(1) translate(0px, -50%);
 	}
 
-	.menu__icon._active span{
+	.menu__icon._active span {
 		transform: scale(0) translate(0px, -50%);
 	}
 
-	.menu__icon._active::before { 
+	.menu__icon._active::before {
 		top: 50%;
 		transform: rotate(-45deg) translate(0px, -50%);
 	}
 
-	.menu__icon._active::after { 
+	.menu__icon._active::after {
 		bottom: 50%;
 		transform: rotate(45deg) translate(0px, 50%);
 	}
@@ -231,9 +270,10 @@ h1 {
 	}
 	.menu__body._active {
 		left: 0;
+		overflow: hidden;
 	}
 	.menu__body::before {
-		content: '';
+		content: "";
 		position: fixed;
 		width: 100%;
 		top: 0;
@@ -247,7 +287,7 @@ h1 {
 	}
 	.menu__list > li {
 		flex-wrap: wrap;
-		margin:  0px 0px 30px 0px;
+		margin: 0px 0px 30px 0px;
 	}
 	.menu__list > li:last-child {
 		margin-bottom: 0;
@@ -265,7 +305,7 @@ h1 {
 
 @media (max-width: 480px) {
 	h1 {
-	  font-size: 1.2rem; /* Размер шрифта для мобильных устройств */
+		font-size: 1.2rem; /* Размер шрифта для мобильных устройств */
 	}
 }
 
@@ -275,19 +315,39 @@ h1 {
 	display: flex;
 	justify-content: right;
 	align-items: right;
-  }
-  
-  .gradient-overlay {
+}
+
+.gradient-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-image: linear-gradient(to right, rgba(25, 26, 30, 1) 52%, rgba(25, 26, 30, 0.5) 100%);
-  }
+}
 
-  .fisrt__image {
-	
+.fisrt__image {
 	width: 50%;
 	height: 10%;
-  }
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border: 1px dashed black;
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background-color: #f2f2f2;
+	color: #333333;
+}
+
+td {
+	background-color: #ffffff;
+	color: #555555;
+}
